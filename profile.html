@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile - SHARIDO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a href="dashboard.html" class="navbar-brand">SHARIDO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="orders.html" class="nav-link">My Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link active">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="btn btn-danger ms-3">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="default-profile.png" alt="Profile Picture" class="rounded-circle mb-3" width="120"
+                            height="120">
+                        <h5>John Doe</h5>
+                        <p class="text-muted">john.doe@example.com</p>
+                        <hr>
+                        <a href="edit-profile.php" class="btn btn-primary w-100 mb-2">Edit Profile</a>
+                        <a href="change-password.php" class="btn btn-warning w-100">Change Password</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Details -->
+            <div class="col-lg-9">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Profile Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <label class="col-sm-3 col-form-label"><strong>Full Name:</strong></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" value="John Doe" readonly>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-3 col-form-label"><strong>Email Address:</strong></label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" value="john.doe@example.com" readonly>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-3 col-form-label"><strong>Phone Number:</strong></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" value="+880 1712 345678" readonly>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-3 col-form-label"><strong>Shipping Address:</strong></label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" rows="2" readonly>House 236/A, Road 8, C Block, Bashundhara R/A, Dhaka</textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-3 col-form-label"><strong>Joined Date:</strong></label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" value="1st January 2023" readonly>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 SHARIDO. All Rights Reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a> |
+                <a href="#" class="text-white text-decoration-none mx-2">Terms of Service</a> |
+                <a href="#" class="text-white text-decoration-none mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
